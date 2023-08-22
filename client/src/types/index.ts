@@ -6,6 +6,7 @@ type TypeUsersApp = {
   deleteUsers: any;
 };
 
+<<<<<<< HEAD
 interface ITasksApp {
   tasks: TypeTask[];
   isFetching: boolean;
@@ -19,6 +20,13 @@ interface ITasksApp {
   isNewTask: any;
   isUpdateTask: any;
   updateShowTask: any;
+=======
+type TypeTasksApp = {
+  tasks: TypeTask[];
+  isFetching: boolean;
+  error: string | null | undefined | unknown;
+  getTasks: any;
+>>>>>>> 2e1a96d (Add component tasks+slice)
 };
 
 type TypeUser = {
@@ -32,6 +40,7 @@ type TypeUser = {
 };
 
 type TypeTask = {
+<<<<<<< HEAD
   id?:number | null;
   body: string;
   isDone: boolean;
@@ -41,6 +50,13 @@ type TypeTask = {
 };
 
 type TypeMapStateToProps = (state: any) => string[];
+=======
+  id:number;
+  body: string;
+  isDone: boolean;
+  deadline: string;
+};
+>>>>>>> 2e1a96d (Add component tasks+slice)
 
 interface IUsersState {
   users: TypeUser[];
@@ -50,12 +66,17 @@ interface IUsersState {
 
 interface ITasksState {
   tasks: TypeTask[];
+<<<<<<< HEAD
   tempTask: TypeTask;
   isFetching: boolean;
   error: string | null | undefined | unknown;
   isEmpty: boolean;
   isOpenNewTask: boolean;
   isOpenUpdateTask: boolean;
+=======
+  isFetching: boolean;
+  error: string | null | undefined | unknown;
+>>>>>>> 2e1a96d (Add component tasks+slice)
 }
 
 enum EnumGender {
@@ -64,4 +85,8 @@ enum EnumGender {
   other,
 }
 
+<<<<<<< HEAD
 export type { IUsersState, ITasksState, ITasksApp, TypeMapStateToProps, TypeUsersApp, TypeUser, TypeTask };
+=======
+export type { IUsersState, ITasksState, TypeUsersApp, TypeTasksApp, TypeUser };
+>>>>>>> 2e1a96d (Add component tasks+slice)
