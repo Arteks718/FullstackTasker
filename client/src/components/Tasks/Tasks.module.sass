@@ -1,0 +1,41 @@
+*
+  font-family: 'Roboto', sans-serif
+
+.container
+  display: flex
+  flex-direction: column
+  width: 45vw
+  margin: 0 auto
+  justify-content: center
+  padding: 15px
+  // margin-top: 
+  text-align: center
+  border: 1px solid #000
+  border-radius: 12px
+  & > *
+    margin: 5px 0
+
+  h1
+    font-size: 24px
+  
+  table
+    border: 1px solid #000
+    z-index: 1
+    border-radius: 15px
+    border-spacing: 5px
+    padding: 5px
+    // background-color: blue
+    tr:first-child
+      border: 12px solid red
+      // background-color: green
+      overflow: hidden
+      // color: #dbdbdb
+  
+  .buttons
+    display: flex
+    justify-content: space-between
+  .newTask
+    align-self: flex-start
+      // position: absolute
+      // width: 10vw
+  
